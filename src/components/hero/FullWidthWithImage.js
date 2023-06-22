@@ -44,6 +44,8 @@ const Actions = styled.div`
 export default function ({
   navLinks = [
     <NavLinks key={1}>
+      <NavLink href="#">Skills</NavLink>
+      <NavLink href="#">About Me</NavLink>
       <NavLink href="#">Portfolio</NavLink>
       <NavLink href="#">About</NavLink> 
     </NavLinks>

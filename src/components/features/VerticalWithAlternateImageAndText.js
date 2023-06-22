@@ -45,30 +45,30 @@ export default () => {
     {
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      subtitle: "Paid",
-      title: "Loachella, NYC",
+      subtitle: "Articulate360 & Rise360",
+      title: "Surf eLearning Course",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity. ",
       url: "https://timerse.com"
     },
 
     {
       imageSrc:
         "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
+      subtitle: "Apple Pages",
+      title: "Surf eLearning Outline",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Course outline covers essential aspects, including induction, addressing bullying, and conflict resolution. Learners will acquire knowledge and skills related to surfing abilities, wave dynamics, surfboard components, conflict management, and fostering a respectful surfing community. The course culminates with a comprehensive assessment to measure progress.",
       url: "https://timerse.com"
     },
 
     {
       imageSrc:
         "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
+      subtitle: "PowerPoint",
+      title: "ESL Course for Adult Learners",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "This project is currently being created.",
       url: "https://timerse.com"
     }
   ];
@@ -77,10 +77,10 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Events</HeadingTitle>
+          <HeadingTitle>Past Projects</HeadingTitle>
           <HeadingDescription>
-            Here are some of the most popular events in New York City curated by professionals.
-          </HeadingDescription>
+          Immersive e-learning experiences designed to inspire growth, engage learners, and drive meaningful results.
+</HeadingDescription>
         </HeadingInfoContainer>
 
         <Content>
@@ -91,7 +91,7 @@ export default () => {
                 <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
-                <Link href={card.url}>See Event Details</Link>
+                <Link href={card.url}>Link to Project</Link>
               </Details>
             </Card>
           ))}
