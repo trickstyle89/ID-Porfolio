@@ -4,6 +4,10 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
+import SurfPreview from "images/surf_course_ss.png";
+import OutlinePreview from "images/outline_preview.png";
+
+
 const Container = tw.div`relative`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -43,19 +47,17 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
+      imageSrc:SurfPreview,
       subtitle: "Articulate360 & Rise360",
       title: "Surf eLearning Course",
       description:
         "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity. ",
-      url: "https://timerse.com"
+      url: "https://rise360-surf.vercel.app/"
     },
 
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Apple Pages",
+      imageSrc:OutlinePreview,
+      subtitle: "Made with Apple Pages",
       title: "Surf eLearning Outline",
       description:
         "Course outline covers essential aspects, including induction, addressing bullying, and conflict resolution. Learners will acquire knowledge and skills related to surfing abilities, wave dynamics, surfboard components, conflict management, and fostering a respectful surfing community. The course culminates with a comprehensive assessment to measure progress.",

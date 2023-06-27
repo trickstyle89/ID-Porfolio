@@ -58,7 +58,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({ cards = null, heading = "My Skillset", subheading = "", description = "I bring a focused range of skills and expertise to deliver exceptional results in education and instructional design. With a strong foundation in designing effective learning experiences, I possess the unique capabilities to create engaging and impactful educational content." }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -70,14 +70,30 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "eLearning Authoring",
+      description: "Familiarity with Articulate360, Rise360 and PowerPoint."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+      imageSrc: SupportIconImage,
+      title: "Learning Systems",
+      description: "LMS experience with Moodle, ManageBac and SEQTA."
+    },
+    { imageSrc: CustomizeIconImage, 
+      title: "Immersive Learning",
+      description: "Leveraging cutting-edge Universal Design for exceptional UX/UI."
+   },
+    { imageSrc: ReliableIconImage, 
+      title: "Cirriculum Experience",
+      description: "Expertise in development, planning, creating educational resources."
+   },
+    { imageSrc: FastIconImage, 
+      title: "Technically Sound",
+      description: "Certified in Full Stack Web Development & Cybersecurity."
+   },
+    { imageSrc: SimpleIconImage,
+      title: "Creative yet Precise",
+      description: "Keen attention to detail. Proficient in Adobe Suite and beyond."
+   }
   ];
 
   if (!cards) cards = defaultCards;

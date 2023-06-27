@@ -3,6 +3,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading } from "components/misc/Headings.js";
+import Hero from "images/profile.jpg";
+
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -32,20 +34,20 @@ export default ({textOnLeft = false}) => {
   //Change the statistics variable as you like, add or delete objects
   const statistics = [
     {
-      key: "Countries",
-      value: "192",
+      key: "Teaching",
+      value: "+10 years",
     },
     {
-      key: "Hotels",
-      value: "479",
+      key: "Developer",
+      value: "+3 Years",
     },
     {
-      key: "Rooms",
-      value: "2093",
+      key: "Students",
+      value: "+1600",
     },
     {
-      key: "Workers",
-      value: "10347",
+      key: "Collaborators",
+      value: "+100",
     }
   ]
 
@@ -53,12 +55,12 @@ export default ({textOnLeft = false}) => {
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image imageSrc="https://images.unsplash.com/photo-1582564286939-400a311013a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80" />
+          <Image imageSrc={Hero} />
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Heading>We have the best service.</Heading>
-            <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Description>
+            <Heading>Ivan Chew</Heading>
+            <Description>Fueled by a profound passion for education, technology, and design, I bring a rich mosaic of experience as an international teacher, adept coder, and dedicated instructional designer. Drawing on this diverse background, I adeptly weave innovative learning solutions that transcend cultural boundaries, empower learners, and ignite curiosity. My unique blend of teaching acumen, coding proficiency, and instructional design know-how enables me to sculpt engaging and transformative educational experiences.</Description>
             <Statistics>
               {statistics.map((statistic, index) => (
               <Statistic key={index}>
