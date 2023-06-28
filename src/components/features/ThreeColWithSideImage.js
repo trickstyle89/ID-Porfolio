@@ -78,22 +78,41 @@ export default ({ cards = null, heading = "My Skillset", subheading = "", descri
       title: "Learning Systems",
       description: "LMS experience with Moodle, ManageBac and SEQTA."
     },
-    { imageSrc: CustomizeIconImage, 
+    {
+      imageSrc: CustomizeIconImage,
       title: "Immersive Learning",
       description: "Leveraging cutting-edge Universal Design for exceptional UX/UI."
-   },
-    { imageSrc: ReliableIconImage, 
+    },
+    {
+      imageSrc: ReliableIconImage,
       title: "Cirriculum Experience",
       description: "Expertise in development, planning, creating educational resources."
-   },
-    { imageSrc: FastIconImage, 
+    },
+    {
+      imageSrc: FastIconImage,
       title: "Technically Sound",
       description: "Certified in Full Stack Web Development & Cybersecurity."
-   },
-    { imageSrc: SimpleIconImage,
-      title: "Creative yet Precise",
-      description: "Keen attention to detail. Proficient in Adobe Suite and beyond."
-   }
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Concise and Precise",
+      description: "Keen attention to detail and obsessed with efficiency."
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Versatile & Adaptable",
+      description: "Proficient in photography, videography, editing and graphic design."
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Creative Problem Solver",
+      description: "Works well under pressure and resources on hand."
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Always Moving Forward",
+      description: "It's part of who I am, always striving towards new ideas."
+    }
   ];
 
   if (!cards) cards = defaultCards;
