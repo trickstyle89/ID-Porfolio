@@ -22,8 +22,8 @@ const FeatureList = tw.ul`mt-12 leading-loose`;
 const Feature = tw.li`flex items-center`;
 const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 text-primary-500`;
 const FeatureText = tw.p`ml-2 font-medium text-gray-700`;
-const ImageColumn = tw(Column)`ml-auto lg:mr-0 relative mt-16 lg:mt-0 lg:ml-32`;
-const ImageContainer = tw.div`relative z-40 transform xl:-translate-x-24 xl:-translate-y-16`;
+const ImageColumn = tw(Column)`ml-auto lg:mr-0 relative mt-32 lg:mt-0 lg:ml-32`;
+const ImageContainer = tw.div`relative z-50 transform xl:-translate-x-24 xl:-translate-y-16`;
 const Image = tw.img`max-w-full w-96 rounded-t sm:rounded relative z-20`;
 const Offsetbackground = tw.div`absolute inset-0 bg-gray-300 rounded xl:-mb-8`
 const ImageDecoratorBlob = styled(SvgDecoratorBlob1)`
@@ -39,12 +39,12 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 export default ({
   heading = "Better, Faster and Cheaper Cloud.",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  imageSrc = "https://img.freepik.com/free-photo/laptop-notebook-blue-desk_23-2147982541.jpg?w=2000&t=st=1688176836~exp=1688177436~hmac=579857bd5b684d192828d4d663e18cb166bede1b026887eabbcc7f1493d1ba50",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
   buttonRounded = true,
-  features = ["Available in 7 Locations", "Premium Internet Backbone", "99.99% Uptime SLA"],
+  features = ["Experienced with Cirriculum  Development", "Multimedia Experience", "99.99% Uptime SLA"],
   testimonial = {
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     customerName: "Charlotte Hale",
@@ -60,14 +60,6 @@ export default ({
       <NavLink href="/#">Contact Us</NavLink>
       <NavLink href="/#">Testimonials</NavLink>
     </NavLinks>,
-    <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
-        Sign Up
-      </PrimaryLink>
-    </NavLinks>
   ];
   return (
     <>

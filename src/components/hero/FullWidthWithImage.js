@@ -1,10 +1,16 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
+
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/light.js";
 
+const FeatureList = tw.ul`mt-12 leading-loose`;
+const Feature = tw.li`flex items-center`;
+const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 text-primary-500`;
+const FeatureText = tw.p`ml-2 font-medium text-gray-700`;
 const StyledHeader = styled(Header)`
   ${tw`justify-between`}
   ${LogoLink} {
@@ -20,8 +26,8 @@ const Container = tw.div`relative -mx-8 -mt-8`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
 const RightColumn = styled.div`
-  background-image: url("https://cdn.pixabay.com/photo/2022/05/17/02/54/zoom-7201517_1280.png");
-  ${tw`bg-green-500 bg-cover bg-center xl:ml-24 h-96 lg:h-auto lg:w-1/2 lg:flex-1`}
+  background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  ${tw`bg-green-500 bg-cover bg-center xl:ml-0 h-auto lg:h-auto lg:w-1/2 lg:flex-1`}
 `;
 
 const Content = tw.div`mt-24 lg:mt-24 lg:mb-24 flex flex-col sm:items-center lg:items-stretch`;
@@ -42,6 +48,7 @@ const Actions = styled.div`
 `;
 
 export default function ({
+  features = ["10 years of International Teaching Experience", "Cirriculum Development for Multiple Provinces", "Graphic, Photography and Multimedia Design", "Full Stack Web Developer Diploma"],
   navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">Skills</NavLink>
@@ -51,7 +58,6 @@ export default function ({
     </NavLinks>
   ], heading = (
     <>
-      Ivan Chew
       <wbr />
       <br />
       <span tw="text-primary-500">Instructional Designer</span>
@@ -67,12 +73,14 @@ export default function ({
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-              <a href={primaryActionUrl} className="action primaryAction">
-                {primaryActionText}
-              </a>
-              <a href={secondaryActionUrl} className="action secondaryAction">
-                {secondaryActionText}
-              </a>
+            <FeatureList>
+                {features.map((feature, index) => (
+                  <Feature key={index}>
+                    <FeatureIcon />
+                    <FeatureText>{feature}</FeatureText>
+                  </Feature>
+                ))}
+              </FeatureList>
             </Actions>
           </Content>
         </LeftColumn>
