@@ -5,6 +5,9 @@ import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-3.svg";
 
+import SurfPreview from "images/surf_course_ss.png";
+import OutlinePreview from "images/outline_preview.png";
+
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap`;
@@ -20,6 +23,7 @@ const Image = styled.div(props => [
 ]);
 const Category = tw.div`mt-4 text-secondary-100 font-bold text-sm`;
 const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg`;
+const Description = tw.p`mt-2 text-sm leading-loose`;
 const Link = tw.a`inline-block mt-2 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 const DecoratorBlob1 = tw(
@@ -32,24 +36,30 @@ const DecoratorBlob2 = tw(
 export default () => {
   const blogPosts = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Event Tips",
-      title: "Finding Amazing Events Near You - Fast, Cheap & Free",
+      imageSrc:SurfPreview,
+      subtitle: "Articulate360 & Rise360",
+      title: "Surf eLearning Course",
+      description:
+        "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity. ",
+      url: "https://rise360-surf.vercel.app/"
+    },
+
+    {
+      imageSrc:OutlinePreview,
+      subtitle: "Made with Apple Pages",
+      title: "Surf eLearning Outline",
+      description:
+        "Course outline covers essential aspects, including induction, addressing bullying, and conflict resolution. Learners will acquire knowledge and skills related to surfing, conflict management and fostering community.",
       url: "https://timerse.com"
     },
+
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543365067-fa127bcb2303?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Reviews",
-      title: "The Top Rated Musical Concerts Worldwide in 2019",
-      url: "https://reddit.com"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "Discover",
-      title: "This female band is making buzz all over the world",
+        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
+      subtitle: "PowerPoint",
+      title: "ESL Course for Adult Learners",
+      description:
+        "This project is currently being created.",
       url: "https://timerse.com"
     }
   ];
@@ -57,8 +67,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Blog Posts</HeadingTitle>
-          <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription>
+          <HeadingTitle>Portfolio</HeadingTitle>
         </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (
@@ -67,7 +76,8 @@ export default () => {
                 <Image imageSrc={post.imageSrc} />
                 <Category>{post.category}</Category>
                 <Title>{post.title}</Title>
-                <Link href={post.url}>Read Post</Link>
+                <Description>{post.description}</Description>
+                <Link href={post.url}>Learn More</Link>
               </Card>
             </Column>
           ))}

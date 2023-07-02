@@ -38,16 +38,16 @@ export default ({textOnLeft = false}) => {
       value: "+10 years",
     },
     {
-      key: "Developer",
+      key: "Web Dev",
       value: "+3 Years",
     },
     {
-      key: "Students",
-      value: "+1600",
+      key: "Multimedia",
+      value: "+15 years",
     },
     {
-      key: "Collaborators",
-      value: "+100",
+      key: "Blogging",
+      value: "+20 years",
     }
   ]
 
@@ -60,7 +60,8 @@ export default ({textOnLeft = false}) => {
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             <Heading>Ivan Chew</Heading>
-            <Description>Fueled by a profound passion for education, technology, and design, I bring a rich mosaic of experience as an international teacher, adept coder, and dedicated instructional designer. Drawing on this diverse background, I adeptly weave innovative learning solutions that transcend cultural boundaries, empower learners, and ignite curiosity. My unique blend of teaching acumen, coding proficiency, and instructional design know-how enables me to sculpt engaging and transformative educational experiences.</Description>
+            <Description>Passionate about education, technology, and design, I bring a versatile blend of skills as an international teacher, skilled coder, and digital storyteller. This unique combination allows me to creatively solve challenges and adapt seamlessly to diverse educational contexts. By leveraging my expertise, I craft innovative learning solutions that transcend cultural boundaries, empower students, and ignite curiosity, leaving a lasting impact.
+</Description>
             <Statistics>
               {statistics.map((statistic, index) => (
               <Statistic key={index}>
