@@ -26,7 +26,7 @@ const Container = tw.div`relative -mx-8 -mt-8`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
 const RightColumn = styled.div`
-  background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  background-image: url("https://img.freepik.com/free-photo/flat-lay-school-supplies-education-day_23-2149241001.jpg?w=1800&t=st=1688323711~exp=1688324311~hmac=21d85a6dfa9a2532904058ff51b07fe82527e19684184a3c3e6d0e6f0662962e");
   ${tw`bg-green-500 bg-cover bg-center xl:ml-0 h-auto lg:h-auto lg:w-1/2 lg:flex-1`}
 `;
 
@@ -51,10 +51,6 @@ export default function ({
   features = ["10 years of International Teaching Experience", "Cirriculum Development for Multiple Provinces", "Graphic, Photography and Multimedia Design", "Full Stack Web Developer Diploma"],
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">Skills</NavLink>
-      <NavLink href="#">About Me</NavLink>
-      <NavLink href="#">Portfolio</NavLink>
-      <NavLink href="#">About</NavLink> 
     </NavLinks>
   ], heading = (
     <>

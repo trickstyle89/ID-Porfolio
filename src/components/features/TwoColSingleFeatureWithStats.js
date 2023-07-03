@@ -38,16 +38,16 @@ export default ({textOnLeft = false}) => {
       value: "+10 years",
     },
     {
-      key: "Developer",
+      key: "Web Dev",
       value: "+3 Years",
     },
     {
-      key: "Students",
-      value: "+1600",
+      key: "Multimedia",
+      value: "+15 years",
     },
     {
-      key: "Collaborators",
-      value: "+100",
+      key: "Blogging",
+      value: "+20 years",
     }
   ]
 
