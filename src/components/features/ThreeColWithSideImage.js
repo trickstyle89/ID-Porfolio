@@ -10,12 +10,15 @@ import defaultCardImage from "images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
-import Elearning from "images/id-logos/lms.png";
-import Authoring from "images/id-logos/design.png";
-import CustomizeIconImage from "images/customize-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
+import Authoring from "images/id-logos/author.png";
+import LMS from "images/id-logos/lms.png";
+import Content from "images/id-logos/content.png";
+import Multimedia from "images/id-logos/Multimedia.png";
+import Models from "images/id-logos/models.png";
+import Strategies from "images/id-logos/certificate.png";
+import Project from "images/id-logos/management.png";
+import Data from "images/id-logos/data.png";
+import Assessment from "images/id-logos/assessment.png";
 
 const Container = tw.div`relative`;
 
@@ -70,48 +73,48 @@ export default ({ cards = null, heading = "My Skillset", subheading = "", descri
   const defaultCards = [
     {
       imageSrc: Authoring,
-      title: "eLearning Software",
-      description: "Familiarity with Articulate360, Rise360 and PowerPoint."
+      title: "Authoring Software",
+      description: "Articulate360, Rise360, PowerPoint and iSpring."
     },
     {
-      imageSrc: Elearning,
-      title: "Learning Systems (LMS)",
-      description: "Experience working with Moodle, ManageBac and SEQTA."
+      imageSrc: LMS,
+      title: "Learning Systems",
+      description: "LMS Experience working with Powerschool, Moodle, ManageBac SEQTA."
     },
     {
-      imageSrc: CustomizeIconImage,
+      imageSrc: Content,
       title: "Content Development",
-      description: "Engaging and effective content creation."
+      description: "Multimedia tools, authoring software, & e-learning technologies."
     },
     {
-      imageSrc: ReliableIconImage,
+      imageSrc: Multimedia,
       title: "Multimedia Integration",
-      description: "Expertise in development, planning, creating educational resources."
+      description: "Elements such as audio, video, graphics, animations & activities."
     },
     {
-      imageSrc: FastIconImage,
+      imageSrc: Models,
       title: "Instructional Design Models",
-      description: "Certified in Full Stack Web Development & Cybersecurity."
+      description: "Analysis, Design, Development, Implementation, & Evaluation."
     },
     {
-      imageSrc: SimpleIconImage,
+      imageSrc: Strategies,
       title: "Instructional Strategies",
-      description: "Keen attention to detail and obsessed with efficiency."
+      description: "Adult Learning principles: Behaviorism, Cognitivism, Constructivism."
     },
     {
-      imageSrc: ReliableIconImage,
+      imageSrc: Project,
       title: "Project Management",
-      description: "Proficient in photography, videography, editing and graphic design."
+      description: "Coordinating with SMEs, meeting deadlines & ensuring deliverables."
     },
     {
-      imageSrc: FastIconImage,
+      imageSrc: Data,
       title: "Data Analysis & Reporting",
-      description: "Works well under pressure and resources on hand."
+      description: "Collecting and analyzing feedback related to learner performance."
     },
     {
-      imageSrc: SimpleIconImage,
+      imageSrc: Assessment,
       title: "Assessment and Evaluation",
-      description: "It's part of who I am, always striving towards new ideas."
+      description: "Measure outcomes from projects, quizzes, surveys, and rubrics."
     }
   ];
 

@@ -50,7 +50,10 @@ const Actions = styled.div`
 `;
 
 export default function ({
-  features = ["10 years of International Teaching Experience", "Cirriculum Development for Multiple Provinces", "Graphic, Photography and Multimedia Design", "Full Stack Web Developer Diploma"],
+  features = ["Over a decade of international teaching.", 
+  "Extensive curriculum development across multiple standards.",
+  "Proficiency in graphic, photography, and video design.",
+  "Web Developer Diploma with technical coding skills"],
   navLinks = [
     <NavLinks key={1}>
     </NavLinks>

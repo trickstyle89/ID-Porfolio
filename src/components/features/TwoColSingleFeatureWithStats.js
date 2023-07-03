@@ -60,7 +60,15 @@ export default ({textOnLeft = false}) => {
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             <Heading>Ivan Chew</Heading>
-            <Description>Fueled by a profound passion for education, technology, and design, I bring a rich mosaic of experience as an international teacher, adept coder, and dedicated instructional designer. Drawing on this diverse background, I adeptly weave innovative learning solutions that transcend cultural boundaries, empower learners, and ignite curiosity. My unique blend of teaching acumen, coding proficiency, and instructional design know-how enables me to sculpt engaging and transformative educational experiences.</Description>
+            <Description>In my journey, every classroom, line of code, and design project has been a 
+              learning experience, born from a profound passion for education, technology, and design. 
+              As an international teacher, I embraced diverse cultures, cultivating a worldview that 
+              values education beyond borders. Coding became my secret language with technology, an 
+              intricate dance of problem-solving and creativity. And as an instructional designer, I've 
+              learned to sculpt educational experiences that captivate learners and ignite curiosity. 
+              Together, these experiences have honed my skills, allowing me to weave innovative learning
+              solutions that engage and transform. It's more than sharing knowledge—it's about sparking
+              a lifelong passion for learning.</Description>
             <Statistics>
               {statistics.map((statistic, index) => (
               <Statistic key={index}>

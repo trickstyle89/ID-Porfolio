@@ -46,7 +46,7 @@ export default () => {
             <SocialLink href="https://medium.com/@chewsstory">
             <img src={MediumIcon} alt="Medium" />
             </SocialLink>
-            <SocialLink href="https://medium.com/@chewsstory">
+            <SocialLink href="https://vimeo.com/user32595080">
             <img src={VimeoIcon} alt="Vimeo" />
             </SocialLink>
           </SocialLinksContainer>

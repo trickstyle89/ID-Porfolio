@@ -55,7 +55,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://ahaslides.com/wp-content/uploads/2022/11/SEO1485-thumb.png",
+        "https://img.freepik.com/free-photo/futuristic-abstract-background-with-circular-shapes_24972-1922.jpg?t=st=1688417151~exp=1688417751~hmac=e5f911f3d83a40d36f1f4d8d47b3e66553978ed45dc06a7430a6b08adc11aeeb",
       subtitle: "PowerPoint",
       title: "ESL Course for Adult Learners",
       description:
