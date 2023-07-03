@@ -34,7 +34,7 @@ const DecoratorBlob2 = tw(
 )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
 export default () => {
-  const blogPosts = [
+  const portfolio = [
     {
       imageSrc:SurfPreview,
       subtitle: "Articulate360 & Rise360",
@@ -71,7 +71,7 @@ export default () => {
           <HeadingTitle>Portfolio</HeadingTitle>
         </HeadingInfoContainer>
         <ThreeColumn>
-          {blogPosts.map((post, index) => (
+          {portfolio.map((post, index) => (
             <Column key={index}>
               <Card>
                 <Image imageSrc={post.imageSrc} />

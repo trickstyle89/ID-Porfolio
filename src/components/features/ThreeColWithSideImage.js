@@ -10,8 +10,8 @@ import defaultCardImage from "images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
+import Elearning from "images/id-logos/lms.png";
+import Authoring from "images/id-logos/design.png";
 import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
@@ -69,48 +69,48 @@ export default ({ cards = null, heading = "My Skillset", subheading = "", descri
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "eLearning Authoring",
+      imageSrc: Authoring,
+      title: "eLearning Software",
       description: "Familiarity with Articulate360, Rise360 and PowerPoint."
     },
     {
-      imageSrc: SupportIconImage,
-      title: "Learning Systems",
-      description: "LMS experience with Moodle, ManageBac and SEQTA."
+      imageSrc: Elearning,
+      title: "Learning Systems (LMS)",
+      description: "Experience working with Moodle, ManageBac and SEQTA."
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Immersive Learning",
-      description: "Leveraging cutting-edge Universal Design for exceptional UX/UI."
+      title: "Content Development",
+      description: "Engaging and effective content creation."
     },
     {
       imageSrc: ReliableIconImage,
-      title: "Cirriculum Experience",
+      title: "Multimedia Integration",
       description: "Expertise in development, planning, creating educational resources."
     },
     {
       imageSrc: FastIconImage,
-      title: "Technically Sound",
+      title: "Instructional Design Models",
       description: "Certified in Full Stack Web Development & Cybersecurity."
     },
     {
       imageSrc: SimpleIconImage,
-      title: "Concise and Precise",
+      title: "Instructional Strategies",
       description: "Keen attention to detail and obsessed with efficiency."
     },
     {
       imageSrc: ReliableIconImage,
-      title: "Versatile & Adaptable",
+      title: "Project Management",
       description: "Proficient in photography, videography, editing and graphic design."
     },
     {
       imageSrc: FastIconImage,
-      title: "Creative Problem Solver",
+      title: "Data Analysis & Reporting",
       description: "Works well under pressure and resources on hand."
     },
     {
       imageSrc: SimpleIconImage,
-      title: "Always Moving Forward",
+      title: "Assessment and Evaluation",
       description: "It's part of who I am, always striving towards new ideas."
     }
   ];

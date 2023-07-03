@@ -2,23 +2,21 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {Container as ContainerBase } from "components/misc/Layouts.js"
-import logo from "../../images/logo.svg";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import logo from "../../images/ivan-logo-white.png";
+import LinkedInIcon from "../../images/id-logos/linkedin-logo-icon.png";
+import GithubIcon from "../../images/id-logos/github-icon.png";
+import MediumIcon from "../../images/id-logos/medium-logo-icon.png";
+import VimeoIcon from "../../images/id-logos/vimeo-logo-icon.png";
 
 
-const Container = tw(ContainerBase)`bg-blue-900 text-gray-100 -mx-8 -mb-8`
+const Container = tw(ContainerBase)`bg-primary-500 text-gray-100 -mx-8 -mb-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const Row = tw.div`flex items-center justify-center flex-col px-8`
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-96`;
 const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
-
-const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`
-const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
 
 const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
@@ -36,24 +34,20 @@ export default () => {
         <Row>
           <LogoContainer>
             <LogoImg src={logo} />
-            <LogoText>Ivan The Savvy Self Starter</LogoText>
+            <LogoText></LogoText>
           </LogoContainer>
-          <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Me</Link>
-            <Link href="#">Portfolio</Link>
-            <Link href="#">Skills</Link>
-          </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
+            <SocialLink href="https://www.linkedin.com/in/chewstory/">
+              <img src={LinkedInIcon} alt="linkedin" />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://github.com/trickstyle89">
+            <img src={GithubIcon} alt="GitHub" />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://medium.com/@chewsstory">
+            <img src={MediumIcon} alt="Medium" />
+            </SocialLink>
+            <SocialLink href="https://medium.com/@chewsstory">
+            <img src={VimeoIcon} alt="Vimeo" />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
