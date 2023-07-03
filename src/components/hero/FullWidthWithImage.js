@@ -6,6 +6,8 @@ import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-c
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/light.js";
+import HeroImage from "images/frontimage.jpg";
+
 
 const FeatureList = tw.ul`mt-12 leading-loose`;
 const Feature = tw.li`flex items-center`;
@@ -26,7 +28,7 @@ const Container = tw.div`relative -mx-8 -mt-8`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
 const RightColumn = styled.div`
-  background-image: url("https://img.freepik.com/free-photo/flat-lay-school-supplies-education-day_23-2149241001.jpg?w=1800&t=st=1688323711~exp=1688324311~hmac=21d85a6dfa9a2532904058ff51b07fe82527e19684184a3c3e6d0e6f0662962e");
+  background-image: url(${HeroImage});
   ${tw`bg-green-500 bg-cover bg-center xl:ml-0 h-auto lg:h-auto lg:w-1/2 lg:flex-1`}
 `;
 
