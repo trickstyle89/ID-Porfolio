@@ -65,7 +65,7 @@ export default ({
       My <span tw="text-primary-500">Resume</span>
     </>
   ),
-  description = "Grounded by my adaptable nature and passion for teamwork, my global journey in teaching and entrepreneurship has been profoundly fulfilling. Continually learning and evolving, I've honed my capacity to craft immersive learning experiences. As a committed lifelong learner, I comprehend and cater effectively to the requirements of adult learners. I welcome new challenges and not only look forward to utilizing my accumulated experience, but also the rewarding process of acquiring new knowledge, fostering creativity, and making a positive difference in people's lives.",
+  description = "Grounded by my adaptable nature and dedication to serving others, my global journey in teaching and entrepreneurship has been profoundly fulfilling. Continually learning and evolving, I've honed my capacity to craft immersive learning experiences. As a committed lifelong learner, I comprehend and cater effectively to the requirements of adult learners. I welcome new challenges and not only look forward to utilizing my accumulated experience, but also the rewarding process of acquiring new knowledge, fostering creativity, and making a positive difference in people's lives.",
   primaryButtonText = "Link to my Web Developer Portfolio",
   primaryButtonUrl = "https://trickstyle89.github.io/",
   imageSrc = Resume,

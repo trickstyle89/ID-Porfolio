@@ -64,8 +64,8 @@ export default ({textOnLeft = false}) => {
               learning experience, born from a profound passion for education, technology, and design. 
               As an international teacher, I embraced diverse cultures, cultivating a worldview that 
               values education beyond borders. Coding became my secret language with technology, an 
-              intricate dance of problem-solving and creativity. And as an instructional designer, I've 
-              learned to sculpt educational experiences that captivate learners and ignite curiosity. 
+              intricate dance of problem-solving and creativity. And as an aspiring instructional designer, I am 
+              learning to sculpt educational experiences that captivate learners and ignite curiosity. 
               Together, these experiences have honed my skills, allowing me to weave innovative learning
               solutions that engage and transform. It's more than sharing knowledge—it's about sparking
               a lifelong passion for learning.</Description>
