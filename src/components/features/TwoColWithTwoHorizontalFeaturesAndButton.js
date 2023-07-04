@@ -4,10 +4,9 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import Resume from "images/resumess.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -60,16 +59,16 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 ]);
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = "",
   heading = (
     <>
-      Designed & Developed by <span tw="text-primary-500">Professionals.</span>
+      My <span tw="text-primary-500">Resume</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
-  imageSrc = TeamIllustrationSrc,
+  description = "Grounded by my adaptable nature and passion for teamwork, my global journey in teaching and entrepreneurship has been profoundly fulfilling. Continually learning and evolving, I've honed my capacity to craft immersive learning experiences. As a committed lifelong learner, I comprehend and cater effectively to the requirements of adult learners. I welcome new challenges and not only look forward to utilizing my accumulated experience, but also the rewarding process of acquiring new knowledge, fostering creativity, and making a positive difference in people's lives.",
+  primaryButtonText = "Live Resume Link",
+  primaryButtonUrl = "https://flowcv.com/resume/vrsgs960vl",
+  imageSrc = Resume,
   buttonRounded = true,
   imageRounded = true,
   imageBorder = false,
@@ -90,15 +89,9 @@ export default ({
   const defaultFeatures = [
     {
       Icon: BriefcaseIcon,
-      title: "Professionalism",
-      description: "We have the best professional marketing people across the globe just to work with you.",
+      title: "PDF Format made with FlowCV",
+      description: "",
       iconContainerCss: tw`bg-teal-300 text-teal-800`
-    },
-    {
-      Icon: MoneyIcon,
-      title: "Affordable",
-      description: "We promise to offer you the best rate we can - at par with the industry standard.",
-      iconContainerCss: tw`bg-red-300 text-red-800`
     }
   ];
 

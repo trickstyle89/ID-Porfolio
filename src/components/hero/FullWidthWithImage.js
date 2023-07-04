@@ -56,6 +56,7 @@ export default function ({
   "Web Developer Diploma with technical coding skills"],
   navLinks = [
     <NavLinks key={1}>
+       <NavLink href="https://flowcv.com/resume/vrsgs960vl">My Resume</NavLink>
     </NavLinks>
   ], heading = (
     <>
