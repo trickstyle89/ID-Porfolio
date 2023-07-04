@@ -66,8 +66,8 @@ export default ({
     </>
   ),
   description = "Grounded by my adaptable nature and passion for teamwork, my global journey in teaching and entrepreneurship has been profoundly fulfilling. Continually learning and evolving, I've honed my capacity to craft immersive learning experiences. As a committed lifelong learner, I comprehend and cater effectively to the requirements of adult learners. I welcome new challenges and not only look forward to utilizing my accumulated experience, but also the rewarding process of acquiring new knowledge, fostering creativity, and making a positive difference in people's lives.",
-  primaryButtonText = "Live Resume Link",
-  primaryButtonUrl = "https://flowcv.com/resume/vrsgs960vl",
+  primaryButtonText = "Link to my Web Developer Portfolio",
+  primaryButtonUrl = "https://trickstyle89.github.io/",
   imageSrc = Resume,
   buttonRounded = true,
   imageRounded = true,
@@ -89,7 +89,7 @@ export default ({
   const defaultFeatures = [
     {
       Icon: BriefcaseIcon,
-      title: "PDF Format made with FlowCV",
+      title: "Learn more about my Technical Coding Skills",
       description: "",
       iconContainerCss: tw`bg-teal-300 text-teal-800`
     }
