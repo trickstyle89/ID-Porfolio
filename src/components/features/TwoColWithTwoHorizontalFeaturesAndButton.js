@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import Resume from "images/resumess.png";
+import Resume from "images/Ivan_Chew_Resume_ID.jpg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
+import { ReactComponent as BriefcaseIcon } from "images/id-logos/coding-browser-svgrepo-com.svg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -101,8 +101,10 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
-          {showDecoratorBlob && <DecoratorBlob />}
+          <a href="https://id-porfolio.vercel.app/images/Ivan_Chew_Resume_ID.pdf" download>
+            <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+            {showDecoratorBlob && <DecoratorBlob />}
+          </a>
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
