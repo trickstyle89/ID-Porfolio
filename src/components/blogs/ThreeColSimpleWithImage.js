@@ -40,7 +40,7 @@ export default () => {
       subtitle: "Articulate360 & Rise360",
       title: "Surf eLearning Course",
       description:
-        "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity. ",
+        "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity.",
       url: "https://rise360-surf.vercel.app/"
     },
 
@@ -59,7 +59,7 @@ export default () => {
       subtitle: "PowerPoint",
       title: "ESL Course for Adult Learners",
       description:
-        "This project is currently being created using Powerpoint, iSpring, Mentimeter, QR4Office and Power-User.",
+        "This Powerpoint project is currently being created using Powerpoint, iSpring, Mentimeter, QR4Office, Power-User and other plugins to help create an interactive and engaging eLearning experience.",
       url: "https://timerse.com"
     }
   ];
