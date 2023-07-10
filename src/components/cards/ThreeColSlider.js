@@ -107,7 +107,7 @@ export default () => {
     },
     {
       imageSrc:WDPortPreview,
-      title: "My Web Developer Portoflio",
+      title: "Developer Portfolio",
       description: "Showcasing my expertise in creating immersive and user-friendly websites. Explore my projects to see how I bring digital ideas to life with modern technologies and a keen eye for aesthetics.",
       locationText: "Website",
       url: "https://trickstyle89.github.io/"
