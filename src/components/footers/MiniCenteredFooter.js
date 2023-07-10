@@ -20,9 +20,9 @@ const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
 
 const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
+  ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-3`}
   svg {
-    ${tw`w-5 h-5`}
+    ${tw`w-1 h-1`}
   }
 `;
 
@@ -41,13 +41,13 @@ export default () => {
               <img src={LinkedInIcon} alt="linkedin" />
             </SocialLink>
             <SocialLink href="https://github.com/trickstyle89">
-            <img src={GithubIcon} alt="GitHub" />
+              <img src={GithubIcon} alt="GitHub" />
             </SocialLink>
             <SocialLink href="https://medium.com/@chewsstory">
-            <img src={MediumIcon} alt="Medium" />
+              <img src={MediumIcon} alt="Medium" />
             </SocialLink>
             <SocialLink href="https://vimeo.com/user32595080">
-            <img src={VimeoIcon} alt="Vimeo" />
+              <img src={VimeoIcon} alt="Vimeo" />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
