@@ -97,14 +97,14 @@ export default () => {
       title: "Surf eLearning Course",
       description: "Harnessing its extensive features and media applications to craft a highly interactive learning experience, showcasing my proficiency in leveraging innovative tools to enhance course engagement and interactivity.",
       locationText: "Articulate360",
-      url: "https://rise360-surf.vercel.app/"
+      url: "https://rise360surf.vercel.app/"
     },
     {
       imageSrc:OutlinePreview,
       title: "Surf eLearning Outline",
       description: "Course outline covers essential aspects, including induction, addressing bullying, and conflict resolution. Learners will acquire knowledge and skills related to surfing, conflict management and fostering community.",
       locationText: "Apple Pages",
-      url: "https://rise360-surf.vercel.app/"
+      url: "https://drive.google.com/file/d/1XkKnD3so1MEmSQH3Q1TiDHKjIK_AS95D/view?usp=drive_link"
     },
     {
       imageSrc:WDPortPreview,
