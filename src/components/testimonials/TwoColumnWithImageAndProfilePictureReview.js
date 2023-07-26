@@ -9,8 +9,14 @@ import { ReactComponent as QuotesLeftIcon } from "../../images/quotes-l.svg";
 import { ReactComponent as QuotesRightIcon } from "../../images/quotes-r.svg";
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
+import DoHardThings from "../../images/DoHardThings.jpg"
+import Range from "../../images/Range.jpg"
+import Outliers from "../../images/outliers.jpeg"
+import Gladwell from "../../images/gladwell.jpg"
+import Magness from "../../images/SteveMagness.jpg"
+import Epstein from "../../images/davidepstein.jpeg"
+
+
 
 import "slick-carousel/slick/slick.css";
 
@@ -58,17 +64,11 @@ const CustomerTitle = tw.p`font-medium text-secondary-100`;
 const QuotesLeft = tw(QuotesLeftIcon)`w-6 h-6 opacity-75 text-primary-500 inline-block mr-1 -mt-3`;
 const QuotesRight = tw(QuotesRightIcon)`w-6 h-6 opacity-75 text-primary-500 inline-block ml-1 -mt-3`;
 
-const DecoratorBlob1 = tw(
-  SvgDecoratorBlob1
-)`absolute w-32 top-0 left-0 -z-10 text-primary-500 opacity-25 transform -translate-x-full`;
-const DecoratorBlob2 = tw(
-  SvgDecoratorBlob2
-)`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
 
 export default ({
   subheading = "",
-  heading = "Testimonials",
-  description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Inspirational Books",
+  description = "Each book in my curated selection has served as a critical guide, enriching my understanding, fostering new skills, and inspiring my transition into this innovative field. They've acted as catalysts, sparking fresh perspectives and propelling my journey towards continuous learning and professional evolution.",
   testimonials = null,
   textOnLeft = false
 }) => {
@@ -78,24 +78,28 @@ export default ({
    */
   const defaultTestimonials = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      imageSrc: DoHardThings,
+      profileImageSrc: Magness,
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
+        "The old model of toughness, in essence, throws people into the deep end of the pool but forgets that we need to first teach people how to swim.",
+      customerName: "Steve Magness",
+      customerTitle: `Author of "Do Hard Things"`
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1523952578875-e6bb18b26645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      imageSrc: Range,
+      profileImageSrc: Epstein,
       quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
+        "The challenge we all face is how to maintain the benefits of breadth, diverse experience, interdisciplinary thinking, and delayed concentration in a world that increasingly incentivizes, even demands, hyperspecialization.",
+      customerName: "David Epstein",
+      customerTitle: `Author of "Range"`
+    },
+    {
+      imageSrc: Outliers,
+      profileImageSrc: Gladwell,
+      quote:
+        "Success is a function of persistence and doggedness and the willingness to work hard for twenty-two minutes to make sense of something that most people would give up on after thirty seconds.",
+      customerName: "Malcolm Gladwell",
+      customerTitle: `Author of "Outliers"`
     }
   ];
 
@@ -154,8 +158,6 @@ export default ({
           </Testimonials>
         </TestimonialsContainer>
       </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
     </Container>
   );
 };

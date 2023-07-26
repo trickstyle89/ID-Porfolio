@@ -5,6 +5,8 @@ import AnimationRevealPage from "helpers/AnimationRevealPage"
 import Hero from "components/hero/FullWidthWithImage"
 import Resume from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
 import Skills from "components/features/ThreeColWithSideImage"
+import Quotes from "components/testimonials/SimplePrimaryBackground"
+import Books from "components/testimonials/TwoColumnWithImageAndProfilePictureReview"
 import Portfolio from "components/cards/ThreeColSlider"
 import AboutMe from "components/features/TwoColSingleFeatureWithStats"
 import Footer from "components/footers/MiniCenteredFooter"
@@ -16,6 +18,8 @@ function App() {
       <Hero />
       <Portfolio />
       <Skills />
+      <Quotes />
+      <Books />
       <Resume />
       <AboutMe />
       <Footer />

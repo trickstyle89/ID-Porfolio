@@ -101,7 +101,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <a href="https://id-porfolio.vercel.app/images/Ivan_Chew_Resume_ID.pdf" download>
+          <a href="https://flowcv.com/resume/vrsgs960vl" download>
             <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
             {showDecoratorBlob && <DecoratorBlob />}
           </a>

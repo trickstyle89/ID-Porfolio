@@ -8,6 +8,11 @@ import { SectionDescription } from "components/misc/Typography.js";
 import { ReactComponent as QuoteIconBase } from "images/quotes-l.svg"
 import { ReactComponent as ArrowLeftIcon } from "images/arrow-left-3-icon.svg"
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
+import Benjamin from "images/benjaminFranklin.jpeg";
+import Seuss from "images/DrSeuss.jpg";
+import Drucker from "images/Drucker.jpg";
+import Toffler from "images/Toffler.jpeg";
+import Bruce from "images/bruceLee.jpeg";
 
 import "slick-carousel/slick/slick.css";
 
@@ -33,7 +38,7 @@ const TestimonialsSlider = styled(Slider)`
 const Testimonial = tw.div`px-6 py-12 sm:px-20 sm:py-16 focus:outline-none flex! flex-col justify-between h-full`
 const QuoteContainer = tw.div`relative`
 const QuoteIcon = tw(QuoteIconBase)`absolute opacity-15 top-0 left-0 transform -translate-y-2 -translate-x-1/2 sm:-translate-x-full w-10 fill-current text-primary-500`
-const Quote = tw.blockquote`font-medium sm:font-normal relative text-sm sm:text-xl text-center sm:text-left`
+const Quote = tw.blockquote`font-medium sm:font-normal relative text-base sm:text-3xl text-center sm:text-left pl-5 sm:pl-10`
 const CustomerInfoAndControlsContainer = tw.div`mt-8 flex items-center flex-col sm:flex-row justify-center text-center sm:text-left`
 const CustomerImage = tw.img`w-16 h-16 rounded-full`
 const CustomerNameAndProfileContainer = tw.div`mt-4 sm:mt-0 sm:ml-4 flex flex-col`
@@ -49,36 +54,54 @@ const ControlButton = styled.button`
 
 export default ({
   subheading = "",
-  heading = "Testimonials",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "My Favorite Quotes about Learning",
+  description = "",
   testimonials = [
     {
-      customerName: "David Hanson",
-      customerProfile: "CEO, Koalify",
-      imageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.85&w=256&h=256&q=80",
+      customerName: "Alvin Toffler",
+      customerProfile: "Futuristic, Provocative Intellectual",
+      imageSrc: Toffler,
       quote:
-        "We have been using servana for about 2 years. And in that time we have had no problem at all. The user interface is really simple to use. Our services scale automatically and we never have to worry about downtimes. is as described."
+        "The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."
     },
     {
-      customerName: "Serena Davis",
-      customerProfile: "Founder, Travana",
-      imageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=256&h=256&q=80",
+      customerName: "Benjamin Franklin",
+      customerProfile: "A Diplomat with Visionary Inventiveness",
+      imageSrc: Benjamin,
       quote:
-        "We are delighted with the quality and performance of the servers that servana provides. The uptime is amazing and the internet connection is great for the price we are paying."
+        "Tell me and I forget, teach me and I may remember, involve me and I learn."
     },
     {
-      customerName: "Timothy Burr",
-      customerProfile: "CTO, Coronax",
-      imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=256&h=256&q=80",
+      customerName: "Bruce Lee",
+      customerProfile: "Dynamic, Philosophical Martial Artist",
+      imageSrc: Bruce,
       quote:
-        "It has been 8 months since we have switched to servana and it has nothing but an amazing experience. The cost is affordable, support is great, uptime is as described."
+        "A wise man can learn more from a foolish question than a fool can learn from a wise answer."
+    },
+    {
+      customerName: "Dr. Seuss",
+      customerProfile: "Imaginative, Whimsical Storyteller",
+      imageSrc: Seuss,
+      quote:
+        "The more that you read, the more things you will know. The more that you learn, the more places you’ll go."
+    },
+    {
+      customerName: "Peter Drucker",
+      customerProfile: "Strategic, Insightful Thinker",
+      imageSrc: Drucker,
+      quote:
+        "We now accept the fact that learning is a lifelong process of keeping abreast of change. And the most pressing task is to teach people how to learn."
     }
   ]
 }) => {
   const [sliderRef, setSliderRef] = useState(null)
+
+  const settings = {
+    arrows: false,
+    ref: setSliderRef,
+    autoplay: true,
+    autoplaySpeed: 3000
+  }
 
   return (
     <PrimaryBackgroundContainer>
@@ -88,7 +111,7 @@ export default ({
           <Heading>{heading}</Heading>
           <Description>{description}</Description>
         </HeadingContainer>
-        <TestimonialsSlider arrows={false} ref={setSliderRef}>
+        <TestimonialsSlider {...settings}>
           {testimonials.map((testimonial, index) => (
             <Testimonial key={index}>
               <QuoteContainer>
