@@ -9,6 +9,8 @@ import { ReactComponent as QuotesLeftIcon } from "../../images/quotes-l.svg";
 import { ReactComponent as QuotesRightIcon } from "../../images/quotes-r.svg";
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
+
+
 import DoHardThings from "../../images/DoHardThings.jpg"
 import Range from "../../images/Range.jpg"
 import Outliers from "../../images/outliers.jpeg"

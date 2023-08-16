@@ -104,7 +104,7 @@ export default () => {
       title: "Surf eLearning Outline",
       description: "Course outline covers essential aspects, including induction, addressing bullying, and conflict resolution. Learners will acquire knowledge and skills related to surfing, conflict management and fostering community.",
       locationText: "Apple Pages",
-      url: "https://drive.google.com/file/d/1XkKnD3so1MEmSQH3Q1TiDHKjIK_AS95D/view?usp=drive_link"
+      url: "https://drive.google.com/file/d/13QzKDfRSCSQy1rsTav0wM4_yBjqpgbT1/view?usp=sharing"
     },
     {
       imageSrc:WDPortPreview,
